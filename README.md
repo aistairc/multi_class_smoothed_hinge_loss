@@ -26,6 +26,9 @@ Please change line 142-156 to fit your own datsets.
 #### To use Multi-class Smoothed Hinge Loss Function in your code
 change
 > loss = nn.CrossEntropyLoss()
-to
+
+in your code to
+
 > from MCSH_loss import MultiClassSmoothedHingeLoss
+
 > loss = MultiClassSmoothedHingeLoss(margin=YOUR_SETTING)
