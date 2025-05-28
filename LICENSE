@@ -1,21 +1,15 @@
-MIT License
+<p align="center"> Terms of Use </p>
+<p align="right"> May 28, 2025 </p>
 
-Copyright (c) 2025 AIST AIRC 
+The users of the must abide by the following Terms of Use:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. When publishing results that use this dataset, the users must cite the following paper in their publication:
+     * Wonjik Kim, Masayuki Tanaka, Masatoshi Okutomi, Hirokazu Nosato, "Multi-class Smoothed Hinge Loss Function in Pre-training for Transfer Learning", IEEE ICIP, 2025.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. By downloading the code or data, the users are regarded as having agreed to the Terms of Use.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+<p align="right"> Copyright at 1) Artificial Intelligence Research Center, </p>
+<p align="right"> National Institute of Advanced Industrial Science and Technology, Japan </p>
+<p align="right"> 2) Department of Systems and Control Engineering, </p>
+<p align="right"> Institute of Science Tokyo, Japan </p>
