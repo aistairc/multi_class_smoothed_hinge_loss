@@ -9,8 +9,8 @@ Project page of the paper 'Multi-class Smoothed Hinge Loss Function in Pre-train
 
 ### Preparing
 To download the pretrained weights, run
-``` pip install huggingface_hub ```
-``` python download.py ```
+``` pip install huggingface_hub
+ python download.py ```
   
 ### Quick start
 
