@@ -21,10 +21,9 @@ def huber(x, a=0.3, delta=1):
     return m*(x2*a) + (1-m)*(x1*g+b)
 
 class _MultiClassMarginLoss(nn.Module):
-    def __init__(self, margin=1, regularization=0, true_class_score=1, adaptive=False ):
+    def __init__(self, margin=1, true_class_score=1, adaptive=False ):
         super(_MultiClassMarginLoss, self).__init__()
         self.margin=margin
-        self.regularization=regularization
         self.true_class_score=true_class_score
         self.adaptive=adaptive
 
@@ -57,15 +56,12 @@ class _MultiClassMarginLoss(nn.Module):
         else:
             x = x.mean()
 
-        if( self.regularization > 0 ):
-            x = x + ((xt-self.true_class_score)**2).mean() * self.regularization
-
         return x
 
 
 class MultiClassSmoothedHingeLoss(_MultiClassMarginLoss):
-    def __init__(self, margin=1, regularization=0, true_class_score=1, adaptive=False ):
-        super(MultiClassSmoothedHingeLoss, self).__init__(margin, regularization, true_class_score, adaptive )
+    def __init__(self, margin=1, true_class_score=1, adaptive=False ):
+        super(MultiClassSmoothedHingeLoss, self).__init__(margin, true_class_score, adaptive )
 
     def _func(self,x):
         return huber( F.relu(x), delta = self.margin)
