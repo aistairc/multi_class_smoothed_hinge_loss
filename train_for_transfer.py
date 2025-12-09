@@ -106,7 +106,7 @@ if __name__ == '__main__':
     parser.add_argument('-dataset', type=str, default='cifar100', help='input size')
     parser.add_argument("-weight_decay", default=0.0, type=float)
     parser.add_argument("-label_smooth", default=0.0, type=float)
-    parser.add_argument('-MCSH_margin', default=0.0, type=float)
+    parser.add_argument('-MCSH_margin', default=7.0, type=float)
     parser.add_argument('-pretrained', type=str, metavar='weight name')
 
     args = parser.parse_args()
