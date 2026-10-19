@@ -16,7 +16,7 @@ python download.py
   
 ### Quick start
 
-#### To use pre-trained resnet50 for transfer learning with cifar-100
+#### To use pre-trained resnet50 for transfer learning of classification with cifar-100
 ```
 python train_for_transfer.py -net resnet50 -pretrained resnet50_MCSH_m7.pth
 ```
@@ -25,6 +25,11 @@ python train_for_transfer.py -net resnet50 -pretrained resnet50_MCSH_m7.pth
 Please change line 142-156 to fit your own datsets.
 ```
 python train_for_transfer.py -net resnet50 -pretrained resnet50_MCSH_m7.pth -num_classes {{your_dataset_class_num}} -dataset {{your_dataset_name}}
+```
+
+#### To use pre-trained resnet50 for transfer learning of segmentation with your own datasets
+```
+python train_segmentation.py -net resnet50 -dataset voc -data_root {{your_dataset_dir}} -pretrained resnet50_MCSH_m7.pth -transfer_mode full -loss_name HH -hh_margin 7 -imgsize 512 -val_imgsize 512 -b 16 -val_b 4
 ```
 
 #### To use Multi-class Smoothed Hinge Loss Function in your code
