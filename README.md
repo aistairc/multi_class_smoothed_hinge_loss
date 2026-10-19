@@ -1,7 +1,6 @@
 # Multi-class Smoothed Hinge Loss Function in Pre-training for Transfer Learning  
-Project page of the paper \\
-'Multi-class Smoothed Hinge Loss Function in Pre-training for Transfer Learning,' ICIP 2025. [paper](https://ieeexplore.ieee.org/document/11084603)
-\\
+Project page of the paper <br>
+'Multi-class Smoothed Hinge Loss Function in Pre-training for Transfer Learning,' ICIP 2025. [paper](https://ieeexplore.ieee.org/document/11084603) <br>
 'Multi-Class Smoothed Hinge Loss for Semantic Segmentation,' ACCV WS 2025. [paper comming soon]()
 
 ---
