@@ -3,8 +3,9 @@
 
 The users of the must abide by the following Terms of Use:
 
-1. When publishing results that use this dataset, the users must cite the following paper in their publication:
+1. When publishing results that use this dataset, the users must cite the following papers in their publication:
      * Wonjik Kim, Masayuki Tanaka, Masatoshi Okutomi, Hirokazu Nosato, "Multi-class Smoothed Hinge Loss Function in Pre-training for Transfer Learning", IEEE ICIP, 2025.
+     * Wonjik Kim, Masayuki Tanaka, Masatoshi Okutomi, Hirokazu Nosato, "Multi-class Smoothed Hinge Loss for Semantic Segmentation", International Workshop on Learning from Small Data in Computer Vision, ACCV WS 2026.
 
 1. By downloading the code or data, the users are regarded as having agreed to the Terms of Use.
 
