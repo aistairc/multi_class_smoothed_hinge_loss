@@ -750,7 +750,7 @@ if __name__ == '__main__':
     parser.add_argument('-label_smooth', default=0.0, type=float)
     parser.add_argument('-optimizer', default='adam', type=str, choices=['adam', 'sam'])
     parser.add_argument('-rho', type=float, default=0.05, help='rho for sam')
-    parser.add_argument('-mcsh_margin', default=0.0, type=float)
+    parser.add_argument('-MCSH_margin', default=0.0, type=float)
     parser.add_argument('-loss_name', default='CE', type=str, metavar='loss name')
     parser.add_argument('-pretrained', type=str, default='pytorch', help='ImageNet checkpoint: pytorch / none / checkpoint')
     parser.add_argument('-transfer_mode', type=str, default='head', choices=['head', 'full'], help='head: freeze backbone; full: fine-tune all')
@@ -832,9 +832,9 @@ if __name__ == '__main__':
         )
 
     if args.loss_name.upper() == 'MCSH':
-        from custom_loss import MultiClassMarginHingeHuber
-        loss_function = MultiClassMarginHingeHuber(
-            margin=args.mcsh_margin
+        from custom_loss import MultiClassSmoothedHingeLoss
+        loss_function = MultiClassSmoothedHingeLoss(
+            margin=args.MCSH_margin
         )
     elif args.loss_name.lower() == 'focal':
         loss_function = MultiClassFocalLoss(ignore_index=IGNORE_INDEX)
@@ -877,7 +877,7 @@ if __name__ == '__main__':
 
     pretrained_tag = _pretrained_tag(args.pretrained)
     path_name = (
-        pretrained_tag + '_' + args.loss_name + str(args.mcsh_margin)
+        pretrained_tag + '_' + args.loss_name + str(args.MCSH_margin)
         + '_data' + args.dataset
         + '_fold' + str(args.foldnum)
         + '_' + args.optimizer
